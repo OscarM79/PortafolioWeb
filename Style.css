@@ -1,0 +1,339 @@
+/*Encabezado*/
+header{
+    background: linear-gradient(90deg,#e688e8,65%,#941D96);
+    padding: 10px;
+}
+.menu{
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+}
+.logo{
+    height: 20px;
+}
+#bt-menu, .check {
+    display: none;
+    cursor: pointer;
+}
+header nav{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+header nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+header nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+}
+header nav a:hover{
+    color: orange;
+    font-size: 1em;
+    cursor: pointer;
+}
+.menu_despegable img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: none;
+}
+
+/*home*/
+.inicio{
+    display: block;
+    height: 20em;
+    text-align: center;
+}
+.inicio h1{
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.inicio img{
+    width: 10em;
+    height: 10em;
+    border-radius: 100%;
+    margin: 5px;
+    border: dotted 5px #ff0000 ;
+}
+
+/*¿Quién soy?*/
+.sobremi{
+    display: flex; 
+    justify-content: space-around;
+}
+.titulo{
+    font-size: 3.5em;
+    font-weight: bold;
+    width: 100%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+}
+.presentacion{
+    width: 42.5%;
+}
+.presentacion p{
+    font-size: 2em;
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+}
+.cv{
+    padding: 20px 40px;
+    background:#0F7EC6;
+    width: 6em;
+    border-radius: 1.5em;
+    text-align: center;
+    color:#ffffff;
+    font-size: 1.2em;
+    margin: 2em auto;
+    box-shadow: 0 0 .5em rgb(207, 207, 207);
+    transition: background-color 2.2s;
+    transition-duration: 3s;
+    transition: 1.5s;
+    cursor: pointer;
+}
+.cv:hover{
+    background-color: #dd587e;
+    padding: 1em;
+    box-shadow: inset 0 0 0.5em #f9f8fc;
+} 
+.skills{
+    width: 42.5%;
+}
+.item{
+    display: inline-block;
+    margin: 0 1.5em 0 1.5em;
+    padding: 0 0.5em 0.5em 0.5em;
+    text-align: center;
+}
+.item img{
+    width: 6.25em;
+    height: 6.25em;
+}
+.item p{
+    margin: 1em 0 3em 0;
+}
+
+/*portafolio*/
+#portafolio{
+    padding: 50px;
+}
+.proyecto{
+    display:inline-block;
+    position: relative;
+    width: 450px;
+    height: 250px;
+    border-radius: 15px;
+    margin: 1em;    
+    color: white;
+    text-align: center;
+}
+.proyecto .protafolio_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.proyecto .capa{
+    position: absolute;
+    visibility: hidden;
+    background-color: #0000009f;
+    width: 100%;
+    height: 250px;
+    top: 0;
+    border-radius: 15px;
+}
+.proyecto:hover .capa{
+    visibility: visible;
+    cursor: pointer;
+}
+.capa .proyecto_titulo{
+    font-size: 1.7em;
+    padding: 1.25vw 0;
+    font-weight: bold;
+}
+.capa .proyecto_descripcion{
+    font-size: 1.2em;
+    padding: 1.5em 0;
+}
+.capa .buttons{
+    width: 80%;
+    margin: 0 auto;
+}
+.buttons a{
+    font-size: 1.3em;
+    color: white;    
+    width: 45%;
+    height: 1.8em;
+    margin: 2.5%;
+    border-radius: 15px;
+}
+.buttons div{
+    display: inline-block;
+    width: 42%;
+    background: #000000;
+    border-radius: 15px;
+}
+.buttons div:hover{
+    background-color: #934762;
+    border-radius: 15px;
+    color: #61d5e7;
+}
+.buttons div p{
+    margin: auto auto;
+}
+.buttons div p i{
+    margin: 0 10px;
+}
+.buttons img{
+    margin: auto 0 auto auto;
+    width: 1.3em;
+    height: 1.3em;
+}
+ /*Contacto*/
+#contacto{
+    padding: 40px 0;
+}
+form{
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;  
+    border: 3px solid black; 
+    box-shadow:
+       inset 0 -3em 3em #0000001a,
+             0 0  0 2px #ffffff,
+             0.3em 0.3em 1em #0000004d;
+
+}
+form label{
+    display: block;
+    font-size: 2em;
+    margin: 10px auto;
+}
+.input_contacto{
+    font-size: 20px;
+    width: 100%;
+    height: 35px;
+    margin: 5px 0 10px 0;
+    border: 2px solid #934762;
+    border-radius: 5px;
+}
+.txtArea{
+    width: 100%;
+    height: 250px;
+    resize: none;
+    border: 2px solid #934762;
+    border-radius: 10px;
+}
+.enviar{
+    display: block;
+    position: relative;
+    font-size: 1.5em;
+    border-radius: 10px;
+    border-bottom: 5px solid #024752;
+    box-shadow: 6px 6px 6px #999;
+    margin: 20px 0;
+    width: 100%;
+    height: 2em;
+    background: #0390a6;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+.enviar:hover{
+    background: #026271;
+    color: white;
+}
+.enviar:active {
+	box-shadow: 2px 2px 2px #777, 0px 0px 35px 0px #00b7f8;
+	border-bottom:1px solid #0045A6;
+    text-shadow:  0px 0px 5px #fff, 0px 0px 5px #fff;
+	transform: translateY(4px);
+    transition: all 0.1s ease 0s;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+    font-size: 1.5em;
+    background: #2f4f4fc0;
+    padding: 20px 0;
+}
+footer img{
+    width: 1.5em;
+    height: 1.5em;
+}
+footer p{
+    margin: 10px 0 0 0;
+}
+/*Resposive*/
+@media screen and (max-device-width:700px) {
+   /*Encabezado*/
+    .check{
+        display: block;
+    }
+    header nav {
+        display: none;
+		position: fixed;
+	}
+
+	.check{
+        position: absolute;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:20px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+        margin: 0 auto;
+        top: 0px;
+        right: 0px;
+        cursor: pointer;
+	}
+    .lista li{
+        display: block;
+        margin-top: 7px;
+    }
+    #bt-menu:checked ~ .lista{
+        display: block;
+        position: relative;
+    }
+    /*¿Quién soy?*/
+    .sobremi{
+        display: block;
+    }
+    .presentacion{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .skills{
+        width: 90%;
+        padding-top: 10px;
+        margin: 0 auto;
+    }
+
+    /*Portafolio*/
+    .proyecto{
+        width: 90%;
+        height: 200px;
+        margin: 10px auto;
+    }
+    .buttons div{
+        width: 100%;
+        margin: 2px;
+    }
+    /*Contacto*/
+    form{
+        width: 80%;
+    }
+
+    
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="Style.css" />
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <div>
+        <h1><img src="Resources/Logo.png" class="logo" alt="Logo" /></h1>
+      </div>
+      <label for="bt-menu" class="check">Menu</label>
+      <input type="checkbox" id="bt-menu" />
+      <nav class="lista">
+        <ul>
+          <li><a href="#home"> Home </a></li>
+          <li><a href="#aboutme"> ¿Quién soy? </a></li>
+          <li><a href="#portafolio"> Mi portafolio </a></li>
+          <li><a href="#contacto"> Contacto </a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home">
+      <article class="inicio">
+        <h1>Ingeniero en Sistemas Computacionales</h1>
+        <img src="/Resources/Foto.jpg" alt="mi_foto" />
+      </article>
+    </section>
+
+    <section id="aboutme">
+      <article class="sobremi">
+        <div class="presentacion">
+          <h1 class="titulo">¿Quién soy?</h1>
+          <p>
+            Me llamo Oscar Martinez Mar egresado del Instituto
+            tecnológico de Querétaro en búsqueda de una oportunidad como
+            desarrollador junior con el objetivo de obtener experiencia,
+            considero que trabajo bien en equipo, con excelentes aptitudes de
+            responsabilidad, autodidacta, proactivo y adaptarme a cualquier
+            circunstancia.
+          </p>
+          <a href="/CV/CV_Oscar Martinez Mar.pdf" target="_blank">
+            <div class="cv">Descargar CV</div>
+          </a>
+        </div>
+
+        <div class="skills">
+          <h1 class="titulo">Tecnologías</h1>
+          <div class="skill_items">
+            <div class="item">
+              <img src="/Resources/java.png" alt="Logo Java" />
+              <p>Java</p>
+            </div>
+            <div class="item">
+              <img src="/Resources/c_sharp.png" alt="Logo C#" />
+              <p>C#</p>
+            </div>
+            <div class="item">
+              <img src="/Resources/html5.png" alt="Logo HTML" />
+              <p>HTML</p>
+            </div>
+            <div class="item">
+              <img src="/Resources/css.png" alt="Logo CSS" />
+              <p>CSS</p>
+            </div>
+            <div class="item">
+              <img src="/Resources/javascript.png" alt="Logo JavaScript" />
+              <p>JavaScript</p>
+            </div>
+            <div class="item">
+              <img src="/Resources/git.png" alt="Logo Git" />
+              <p>Git</p>
+            </div>
+            <div class="item">
+              <img src="/Resources/github.png" alt="Logo GitHub" />
+              <p>GitHub</p>
+            </div>
+            <div class="item">
+              <img src="/Resources/Logo_VisualStudio.png" alt="Logo Visual Studio Code" />
+              <p>Visual Studio Code</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="portafolio">
+      <h1 class="titulo">Proyectos</h1>
+      <div class="proyecto">
+        <img src="/Img_Proyectos/Codificador.png" alt="Codificador.png" class="protafolio_img" />
+        <div class="capa">
+          <h3 class="proyecto_titulo">Codificador y descodificador</h3>
+          <p class="proyecto_descripcion">Aplicacion Web: HTML, CSS y JavaScript</p>
+          <div class="buttons">
+            <a href="https://oscarm79.github.io/OscarM79.github.io-codificador/" target="_blank">
+              <div class="sitio_web">
+                <p>&#127760 Sitio Web</p>
+              </div>
+            </a>
+            <a href="https://github.com/OscarM79/OscarM79.github.io-codificador" target="_blank">
+              <div class="repositorio">
+                <p><i class="fa fa-github"></i>Repositorio</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="contacto">
+      <h1 class="titulo">Contactame</h1>
+      <form id="form" action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" class="input_contacto"/>
+
+        <label for="email">Correo:</label>
+        <input type="email" id="email" class="input_contacto" />
+
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" class="input_contacto" />
+
+        <label for="cuerpo">Cuerpo:</label>
+        <textarea id="cuerpo" class="txtArea"></textarea>
+
+        <input type="submit" value="Enviar" class="enviar" />
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://www.linkedin.com/in/oscar-martinez-mar-isc">
+      <img src="./Resources/Linkedin.png" alt="Linkedln" />
+    </a>
+    <p>&copyPortafolio | Oscar Martinez Mar</p>
+    <p>Derechos Reservados</p>
+  </footer>
+  
+  <script src="/main.js"></script>
+</body>
+
+</html>

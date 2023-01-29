@@ -259,6 +259,9 @@ form label{
 	transform: translateY(4px);
     transition: all 0.1s ease 0s;
 }
+form a{
+    display: none;
+}
 
 /*footer*/
 footer{
@@ -334,7 +337,5 @@ footer p{
     /*Contacto*/
     form{
         width: 80%;
-    }
-
-    
+    }    
 }

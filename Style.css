@@ -230,6 +230,7 @@ form label{
     width: 100%;
     height: 250px;
     resize: none;
+    font-size: 30px;
     border: 2px solid #934762;
     border-radius: 10px;
 }

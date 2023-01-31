@@ -1,7 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
 /*Encabezado*/
 header{
     background: linear-gradient(90deg,#e688e8,65%,#941D96);
     padding: 10px;
+    position: fixed;
+    width: 100%;
 }
 .menu{
     width: 90%;
@@ -42,12 +47,16 @@ header nav a:hover{
     position: absolute;
     display: none;
 }
-
+/*Secciones*/
+section [id]{
+    scroll-margin-top: 20px;
+}
 /*home*/
 .inicio{
     display: block;
     height: 20em;
     text-align: center;
+    padding-top: 40px;
 }
 .inicio h1{
     padding: 20px;
@@ -69,7 +78,7 @@ header nav a:hover{
     justify-content: space-around;
 }
 .titulo{
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: bold;
     width: 100%;
     margin: 1em auto;

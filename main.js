@@ -1,7 +1,8 @@
+//Constantes para envio de correo
 const form = document.getElementById ('form');
 const enviarCorreo = document.getElementById('correo');
 
-
+//Envio de correo
 form.addEventListener('submit',function(event){
     event.preventDefault(false);
     const datosForm = new FormData(this)

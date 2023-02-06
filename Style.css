@@ -136,7 +136,7 @@ a{
 
 /*portafolio*/
 #portafolio{
-    padding: 30px;
+    padding: 15px;
 }
 .proyecto{
     display:inline-block;
@@ -176,7 +176,7 @@ a{
     padding: 1.5em 0;
 }
 .capa .buttons{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 .buttons a{

@@ -3,7 +3,7 @@ html{
 }
 /*Encabezado*/
 header{
-    background: linear-gradient(90deg,#e688e8,65%,#941D96);
+    background-color: #575c9f;
     padding: 10px;
     position: fixed;
     width: 100%;
@@ -58,19 +58,26 @@ section [id]{
     height: 20em;
     text-align: center;
     padding-top: 40px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("./Resources/technology-fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
 }
 .inicio h1{
     padding: 20px;
     font-size: 2em;
     font-weight: bold;
+    color: #ede8e8;
 }
 
 .inicio img{
     width: 10em;
-    height: 10em;
+    height: 10.5em;
     border-radius: 100%;
     margin: 5px;
-    border: dotted 5px #ff0000 ;
+    border: solid 5px #2e3157 ;
 }
 
 /*¿Quién soy?*/
@@ -78,12 +85,13 @@ section [id]{
     display: flex; 
     justify-content: space-around;
     padding-top: 20px;
+    background-color: #ececef;
 }
 .titulo{
     font-size: 3em;
     font-weight: bold;
     width: 100%;
-    margin: 1em auto;
+    margin: 12px auto;
     display: flex;
     justify-content: center;
 }
@@ -99,7 +107,7 @@ a{
 }
 .cv{
     padding: 20px 40px;
-    background:#0F7EC6;
+    background:#838ba9;
     width: 6em;
     border-radius: 1.5em;
     text-align: center;
@@ -136,7 +144,8 @@ a{
 
 /*portafolio*/
 #portafolio{
-    padding: 15px;
+    padding: 20px;
+    background-color: #8B80AF;
 }
 .proyecto{
     display:inline-block;
@@ -190,7 +199,7 @@ a{
 .buttons div{
     display: inline-block;
     width: 42%;
-    background: #000000;
+    background-color: #575c9f;
     border-radius: 15px;
 }
 .buttons div:hover{
@@ -212,12 +221,15 @@ a{
  /*Contacto*/
 #contacto{
     padding: 40px 0;
+    background-color: #ececef;
 }
 form{
+    background-color: #ffffff;
     width: 50%;
     padding: 20px;
     margin: 0 auto;  
     border: 3px solid black; 
+    border-radius: 5px;
     box-shadow:
        inset 0 -3em 3em #0000001a,
              0 0  0 2px #ffffff,
@@ -250,12 +262,12 @@ form label{
     position: relative;
     font-size: 1.5em;
     border-radius: 10px;
-    border-bottom: 5px solid #024752;
+    border-bottom: 5px solid #393D71;
     box-shadow: 6px 6px 6px #999;
     margin: 20px 0;
     width: 100%;
     height: 2em;
-    background: #0390a6;
+    background-color: #838ba9;
     cursor: pointer;
     transition: all 0.2s ease 0s;
 }
@@ -278,8 +290,9 @@ form a{
 footer{
     text-align: center;
     font-size: 1.5em;
-    background: #2f4f4fc0;
+    background-color: #393D71;
     padding: 20px 0;
+    color: #ffffff;
 }
 footer img{
     width: 1.5em;

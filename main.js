@@ -1,11 +1,21 @@
-//Constantes para envio de correo
-const form = document.getElementById ('form');
-const enviarCorreo = document.getElementById('correo');
+//Envio de mensaje por EmailJs
+const btn = document.getElementById('enviar');
 
-//Envio de correo
-form.addEventListener('submit',function(event){
-    event.preventDefault(false);
-    const datosForm = new FormData(this)
-    enviarCorreo.setAttribute('href',`mailto:1998.omartinez@gmail.com?subject=${datosForm.get('name')} - ${datosForm.get('subject')} - ${datosForm.get('email')}&body=${datosForm.get('message')}`)
-    enviarCorreo.click()
-})
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_9238515';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar';
+      alert('Mensaje enviado');
+    }, (err) => {
+      btn.value = 'Enviar';
+      alert(JSON.stringify(err));
+    });
+});

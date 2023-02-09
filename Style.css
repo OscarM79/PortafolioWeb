@@ -1,3 +1,4 @@
+
 html{
     scroll-behavior: smooth;
 }
@@ -91,7 +92,7 @@ section [id]{
     font-size: 3em;
     font-weight: bold;
     width: 100%;
-    margin: 12px auto;
+    margin: 10px auto 0.8em auto;
     display: flex;
     justify-content: center;
 }
@@ -99,8 +100,9 @@ section [id]{
     width: 42.5%;
 }
 .presentacion p{
-    font-size: 2em;
+    font-size: 1.3em;
     text-align: justify;
+    line-height: 1.5em;
 }
 a{
     text-decoration: none;
